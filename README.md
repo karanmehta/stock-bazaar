@@ -6,6 +6,8 @@ Stock Bazaar is stock ticker app. Below are the technologies used in this app:
   - Websocket
   - Graphs (to do)
 
+  You can view the live demo of Stock Bazaar [here](https://karanmehta.github.io/stock-bazaar-app/)
+
 ### What I learned
 
 * Hash Table - Hash Table is the quickest way to access and update the data
