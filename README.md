@@ -6,9 +6,9 @@ Stock Bazaar is stock ticker app. Below are the technologies used in this app:
   - Websocket
   - Graphs (to do)
 
-  You can view the live demo of Stock Bazaar [here](https://karanmehta.github.io/stock-bazaar-app/).
+![Stock Bazaar App](stock-bazaar-demo.gif)
 
-  ![Stock Bazaar App](stock-bazaar-demo.gif)
+You can view the live demo of Stock Bazaar [here](https://karanmehta.github.io/stock-bazaar-app/).
   
 ### NOTE: 
 Browser will throwing "Mixed content" error, and javascript files won't be executed untill you click on "load unsafe scripts". I am looking for parmanent solution for it.
