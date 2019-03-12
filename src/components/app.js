@@ -11,7 +11,7 @@ export default class App extends React.Component {
 
     handleData(data) {
         const sanitizeStocks = JSON.parse(data);
-        let stockBucket = JSON.parse(JSON.stringify(this.state.stocks));
+        const stockBucket = JSON.parse(JSON.stringify(this.state.stocks));
 
         for (var i = 0; i < sanitizeStocks.length; i++){
             let curStock = sanitizeStocks[i];
@@ -24,7 +24,7 @@ export default class App extends React.Component {
             } else {
                 stockBucket[stockSymbol]["status"] = stockBucket[stockSymbol]["price"] > stockPrice ? "status-negative" : "status-positive";
                 stockBucket[stockSymbol]["price"] = stockPrice;
-                stockBucket[stockSymbol]["lastUpdatedAgo"] = Math.round((new Date().getTime() - stockBucket[stockSymbol]["lastUpdated"])/1000) + " secs ago";
+                stockBucket[stockSymbol]["lastUpdatedAgo"] = Math.round((new Date().getTime() - stockBucket[stockSymbol]["lastUpdated"])/1000) + " seconds ago";
                 stockBucket[stockSymbol]["lastUpdated"] = new Date().getTime();
             }
         }
